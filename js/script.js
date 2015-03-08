@@ -1,3 +1,15 @@
+$(document).ready(function() {
+   $(document).on("pageshow", "[data-role='page']", function() {
+   	  if ($($(this)).hasClass("header_default")) {
+   	  	$('<header data-theme="b" data-role="header"><h1></h1><a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-notext ui-icon-back" data-rel="back">Back</a><a href="#" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-notext ui-icon-info">Info</a></header>')
+   	  	.prependTo( $(this) )
+   	  	.toolbar({ position: "fixed" });
+   	  	$("[data-role='header'] h1").text($(this).jqmData("title"));
+   	  } //if header_default
+   }); //show_page
+});//document.ready
+
+
 function listPosts(data) {
 	var output = '<form class="ui-filterable"><input id="searchposts" data-type="search"></form>';
 
