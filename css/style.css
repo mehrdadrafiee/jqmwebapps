@@ -1,0 +1,16 @@
+#home .ui-controlgroup {
+	width: 60%;
+	margin: 0 auto;
+	max-width: 200px;
+}
+
+#home img {
+	width: 100%;
+	max-width: 375px;
+	display: block;
+	margin: 0 auto;
+}
+
+#home {
+	background: url('../images/background_viewsource.png');
+}
