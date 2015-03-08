@@ -14,3 +14,11 @@
 #home {
 	background: url('../images/background_viewsource.png');
 }
+
+li .ui-li-has-thumb img {
+	margin: 10px;
+}
+
+iframe {
+	width: 100%;
+}
