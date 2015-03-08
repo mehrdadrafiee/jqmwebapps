@@ -1,39 +1,43 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>jQuery Mobile Web Apps</title>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="js/jquerymobile.js"></script>
-
   <!-- stylesheets -->
   <link rel="stylesheet" href="css/jquerymobile.css">
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
   <section data-role="page" id="home">
-  	<header data-theme="b" data-role="header">
-  		<h1>header</h1>
-      <a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-notext ui-icon-home">Home</a>
-      <a href="#" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-notext ui-icon-info">Info</a>
-  	</header> <!-- header -->
   	<article data-role="content">
   	  <img src="images/viewsourcelogo.png">
-      
       <div data-role="controlgroup" data-theme="b">
-  	    <a href="#" class="ui-btn ui-icon-edit ui-btn-icon-left ui-corner-all ui-shadow">Blog</a>
+  	    <a href="#blog" class="ui-btn ui-icon-edit ui-btn-icon-left ui-corner-all ui-shadow">Blog</a>
   	    <a href="#" class="ui-btn ui-icon-video ui-btn-icon-left ui-corner-all ui-shadow">Videos</a>
   	    <a href="#" class="ui-btn ui-icon-camera ui-btn-icon-left ui-corner-all ui-shadow">Photos</a>
   	    <a href="#" class="ui-btn ui-icon-comment ui-btn-icon-left ui-corner-all ui-shadow">Tweets</a>
       </div>
-
   	</article> <!-- content -->
+  </section> <!-- home -->
 
-  	<footer data-theme="b" data-role="footer" data-position="fixed">
-      <nav data-role="navbar">
+
+<!-- page: blog -->
+<section id="blog" data-role="page" data-title="Blog">
+  <header data-theme="b" data-role="header">
+    <h1>header</h1>
+      <a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-notext ui-icon-home">Home</a>
+        <a href="#" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-notext ui-icon-info">Info</a>
+  </header> <!-- header -->
+  <div data-role="content" id="postlist">
+  <h1>Welcome</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium risus tellus, a viverra lacus sodales volutpat.</p>
+  </div> <!-- content -->
+  <footer data-theme="b" data-role="footer" data-position="fixed">
+    <nav data-role="navbar">
       <ul>
         <li><a href="#" class="ui-btn ui-icon-home ui-btn-icon-top">Home</a></li>
         <li><a href="#" class="ui-btn ui-icon-edit ui-btn-icon-top">Blog</a></li>
@@ -41,25 +45,9 @@
         <li><a href="#" class="ui-btn ui-icon-camera ui-btn-icon-top">Photos</a></li>
         <li><a href="#" class="ui-btn ui-icon-comment ui-btn-icon-top">Tweets</a></li>
       </ul>
-      </nav>
-  </section> <!-- home -->
-
-  <section data-role="page" id="info">
-  	<div data-role="header">
-  		
-  	</div> <!-- header -->
-  	<article data-role="content">
-  	  <h1>Second</h1>
-  	  <p>Lorem ipsum dolor sit amet.</p>
-  	  <a href="#home">Home</a>
-  	</article> <!-- content -->
-  	<div data-role="footer">
-  		
-    </div> <!-- footer -->
-  </section> <!-- home -->
-
-  <h1>Hello World!</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget enim ac ligula hendrerit feugiat. Nunc mi metus, vestibulum sit amet nisl a, luctus semper lorem. Maecenas ullamcorper eros et lorem pellentesque, sed efficitur massa dapibus. Suspendisse ullamcorper turpis nulla, in faucibus arcu dignissim et. Nunc vestibulum, risus eget fermentum que sed urna a leo fermentum interdum.</p>
+    </nav>
+  </footer> <!-- footer -->
+</section> <!-- blog page -->
 
 <script src="js/script.js"></script>
 </body>
